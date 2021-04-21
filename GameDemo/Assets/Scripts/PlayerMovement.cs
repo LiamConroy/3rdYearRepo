@@ -477,8 +477,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Shoot() {
-        m_MyAudioSource.Play();
+        
         if(!PauseMenu.GameIsPaused){
+        m_MyAudioSource.Play();
         GameObject clone = Instantiate(bullet, muzzle, gameObject.transform.rotation);
         clone.transform.forward = playerCamera.transform.forward;
         }

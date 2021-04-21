@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
    // public GameObject Player;
     public static bool GameIsPaused = false;
     public GameObject PauseMenuOverlay;
+    public GameObject reticle;
    
     // Update is called once per frame
     void Update()
@@ -27,6 +28,7 @@ public class PauseMenu : MonoBehaviour
     void Resume(){
         Debug.Log("Running");
         PauseMenuOverlay.SetActive(false);
+        reticle.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.visible = false;
@@ -37,6 +39,7 @@ public class PauseMenu : MonoBehaviour
     void Pause(){
         Debug.Log("Paused");
         PauseMenuOverlay.SetActive(true);
+        reticle.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.visible = true;
