@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    
     //public static bool GameIsPaused = false;
     public static bool hasWalljumped = false;
     //Assingables
@@ -66,13 +64,16 @@ public class PlayerMovement : MonoBehaviour
     public bool isWallRunning;
     public float maxWallRunCameraTilt, wallRunCameraTilt;
 
+    //Sound
+    AudioSource m_MyAudioSource;
+
     void Start()
     {
         health = maxHealth;
         playerScale = transform.localScale;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-       
+        m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     private void WallRunInput() //make sure to call in void Update
@@ -148,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
         if (health <= 0)
             Die();
 
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(0))
         {
            //if(!GameIsPaused){
             Shoot();
@@ -476,11 +477,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Shoot() {
-
-         if(!PauseMenu.GameIsPaused){
+        m_MyAudioSource.Play();
+        if(!PauseMenu.GameIsPaused){
         GameObject clone = Instantiate(bullet, muzzle, gameObject.transform.rotation);
         clone.transform.forward = playerCamera.transform.forward;
-         }
+        }
         
     }
 
