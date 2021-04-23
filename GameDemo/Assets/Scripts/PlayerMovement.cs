@@ -156,8 +156,8 @@ public class PlayerMovement : MonoBehaviour
             //}
         }
 
-        muzzleObj = GameObject.Find("muzzleFlash");
-        muzzle = muzzleObj.transform.position;
+        // muzzleObj = GameObject.Find("muzzleFlash");
+        // muzzle = muzzleObj.transform.position;
     }
 
     //Find user input
