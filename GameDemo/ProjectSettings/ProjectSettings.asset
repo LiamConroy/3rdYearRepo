@@ -664,6 +664,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -677,10 +678,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: fb5cf90a-fe94-4dea-aba9-3ad619d84cd3
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: ForwardMomentum
+  organizationId: hueyluam
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
