@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     
-    
+    void Start(){
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
+    }
     public void PlayGame() {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);  
     }
@@ -25,5 +28,23 @@ public class MainMenu : MonoBehaviour
         Debug.Log("scene switch");
     }
 
-    
+    public void LevelOne (){
+        SceneManager.LoadScene("LevelOne");
+        Debug.Log("Level One");
+    }
+
+    public void LevelTwo (){
+        SceneManager.LoadScene("LevelTwo");
+        Debug.Log("Level Two");
+    }
+
+    public void Tutorial (){
+        SceneManager.LoadScene("TutorialLevel");
+        Debug.Log("Level Two");
+    }
+
+    public void Back (){
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("Back to main menu");
+    }
 }
