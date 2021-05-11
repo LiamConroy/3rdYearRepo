@@ -47,4 +47,5 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Debug.Log("Back to main menu");
     }
+
 }
