@@ -27,6 +27,8 @@ public class Enemy : MonoBehaviour
     private Transform bulletSpawned;
     public CapsuleCollider enemyCollider;
 
+    private float distance;
+
     // Update is called once per frame
 
     Transform target;
@@ -34,6 +36,7 @@ public class Enemy : MonoBehaviour
     
     void Start (){
         target = PlayerManager.instance.player.transform;
+        distance = 0f;
         agent = GetComponent<NavMeshAgent>();
         BulletSpawnPoint = GameObject.Find("BulletSpawnPoint");
         enemyCollider = GetComponent<CapsuleCollider>();
@@ -45,10 +48,13 @@ public class Enemy : MonoBehaviour
    //Update is called once per frame
     void Update()
     {
+        print(target);
         //Follow player
-        float distance = Vector3.Distance(target.position, transform.position);
+        print("Distance: "+distance);
+        distance = Vector3.Distance(target.position, transform.position);
         if(distance <= lookRadius)
         {
+            print("MOVING");
             velocity += Time.deltaTime * acceleration;
             agent.SetDestination(target.position);
             agent.speed = 10f;
