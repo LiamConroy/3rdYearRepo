@@ -16,7 +16,7 @@ public class LevelSwitch : MonoBehaviour
             Debug.Log("Timer Off");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-             SceneManager.LoadScene("YouWinScene");
+            SceneManager.LoadScene("YouWinScene");
         }
 
     }

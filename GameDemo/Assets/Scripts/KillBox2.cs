@@ -6,24 +6,27 @@ using UnityEngine.SceneManagement;
 public class KillBox2 : MonoBehaviour
 {
 
+public static string sceneName;
 
 
 void Update(){
-        //Restart 
-     
+    
+    //Restart 
+    Scene currentScene = SceneManager.GetActiveScene();  
+    sceneName = currentScene.name;
      
  }
 
   void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collision");
-        Scene currentScene = SceneManager.GetActiveScene();  
-        string sceneName = currentScene.name;
+        //Scene currentScene = SceneManager.GetActiveScene();  
+        //string sceneName = currentScene.name;
         
         if (other.transform.CompareTag("Player"))
         {
-            Debug.Log("game restart");
-            SceneManager.LoadScene(sceneName);
+            Debug.Log("Death");
+            SceneManager.LoadScene("LoseScene");
         }
     }
 }

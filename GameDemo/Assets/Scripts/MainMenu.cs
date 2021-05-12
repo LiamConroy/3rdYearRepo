@@ -19,13 +19,14 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void LevelSelect (){
-        SceneManager.LoadScene("LevelSelect");
-    }
-
     public void NextLevel (){
         SceneManager.LoadScene("LevelTwo");
         Debug.Log("scene switch");
+    }
+    
+    public void Tutorial (){
+        SceneManager.LoadScene("TutorialLevel");
+        Debug.Log("Level Two");
     }
 
     public void LevelOne (){
@@ -35,11 +36,6 @@ public class MainMenu : MonoBehaviour
 
     public void LevelTwo (){
         SceneManager.LoadScene("LevelTwo");
-        Debug.Log("Level Two");
-    }
-
-    public void Tutorial (){
-        SceneManager.LoadScene("TutorialLevel");
         Debug.Log("Level Two");
     }
 

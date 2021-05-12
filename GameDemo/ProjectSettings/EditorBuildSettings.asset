@@ -9,13 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e790873c86d98e847b3b90d43d7c2d72
   - enabled: 1
+    path: Assets/Scenes/TutorialLevel.unity
+    guid: d4a7524f44938f24aa82904a9ebb348d
+  - enabled: 1
     path: Assets/Scenes/LevelOne.unity
     guid: 98e06ebd53319df4db63695e7f649d81
   - enabled: 1
     path: Assets/Scenes/LevelTwo.unity
     guid: 08deb54bea0e4984a906b3bf018b46b6
   - enabled: 1
-    path: Assets/Scenes/LoseScreen.unity
+    path: Assets/Scenes/LoseScene.unity
     guid: bc52e6c777dae544fba4c67918725a00
   - enabled: 1
     path: Assets/Scenes/YouWinScene.unity

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GetTimer : MonoBehaviour
 {
     public Text TimerBox;
-    public Text grade;
+    //public Text grade;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,19 +18,19 @@ public class GetTimer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-      if(Timer.timeStart < 35){
-        grade.text = "A+";                           
-      }
+    //void Update()
+    //{
+    //  if(Timer.timeStart < 35){
+    //    grade.text = "A+";                           
+    //  }
 
-      if(Timer.timeStart >= 35){
-        grade.text = "B";                           
-      }
+    //  if(Timer.timeStart >= 35){
+    //   grade.text = "B";                           
+    //  }
 
       // else if(Timer.timeStart > 35){
       //   grade.text = "youre to slow";
       // }
       
-    }
+    //}
 }
