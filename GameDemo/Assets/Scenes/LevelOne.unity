@@ -906,6 +906,47 @@ Transform:
   m_Father: {fileID: 802637955}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &18586068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18586069}
+  m_Layer: 0
+  m_Name: InteriorLights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18586069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18586068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 216.83186, y: 34.003494, z: -31.156197}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1494012944}
+  - {fileID: 984400161}
+  - {fileID: 115050989}
+  - {fileID: 1434641606}
+  - {fileID: 743830023}
+  - {fileID: 1695543145}
+  - {fileID: 1512641114}
+  - {fileID: 349566698}
+  - {fileID: 776041820}
+  - {fileID: 1736743720}
+  - {fileID: 579161714}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &24264819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,12 +4767,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115050987}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 218.07, y: 41.6, z: -190.13}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.2381439, y: 7.596504, z: -158.97382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &115787237
 Mesh:
@@ -6235,7 +6276,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -6275,7 +6316,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -6347,7 +6388,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 169390410}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 2090298830}
   enemyCollider: {fileID: 0}
 --- !u!43 &172489664
 Mesh:
@@ -7297,6 +7338,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &215035201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 2030852260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &215325645
 GameObject:
   m_ObjectHideFlags: 0
@@ -9857,7 +9904,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -9897,7 +9944,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -9969,7 +10016,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 262233042}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 326657379}
   enemyCollider: {fileID: 0}
 --- !u!1 &264000062
 GameObject:
@@ -18475,6 +18522,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90.00001, y: 180, z: 0}
+--- !u!1 &326657379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 262233040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &332934467
 GameObject:
   m_ObjectHideFlags: 0
@@ -19602,12 +19655,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349566696}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.09, y: 54.35, z: -25.83}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -201.74187, y: 20.346504, z: 5.3261967}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &360105552
 Mesh:
@@ -27511,7 +27564,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -27551,7 +27604,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -27623,7 +27676,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 503625299}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1575134251}
   enemyCollider: {fileID: 0}
 --- !u!1 &505734381
 GameObject:
@@ -32059,12 +32112,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579161712}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.09, y: 49.28, z: -85.45}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -201.74187, y: 15.2765045, z: -54.2938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &581871625
 GameObject:
@@ -36464,6 +36517,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &686111381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518603401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &697169640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 786238784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &704413873
 GameObject:
   m_ObjectHideFlags: 0
@@ -38136,12 +38201,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743830021}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 98.2, y: 50.4, z: -28.72}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -118.63187, y: 16.396507, z: 2.4361973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &744055224
 Mesh:
@@ -39961,12 +40026,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776041818}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.09, y: 106.99, z: -82.01}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -201.74187, y: 72.9865, z: -50.853806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &777961761
 Mesh:
@@ -40612,6 +40677,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+        type: 3}
+      propertyPath: m_Name
+      value: BulletSpawnPoint2
+      objectReference: {fileID: 0}
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_Name
@@ -40620,7 +40690,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -40660,7 +40730,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -40732,7 +40802,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 786238786}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 697169640}
   enemyCollider: {fileID: 0}
 --- !u!43 &788145498
 Mesh:
@@ -45299,7 +45369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &931543305
 GameObject:
@@ -46206,7 +46276,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 939265499}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1020235540}
   enemyCollider: {fileID: 0}
 --- !u!95 &939265499 stripped
 Animator:
@@ -47745,7 +47815,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -47785,7 +47855,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -47857,7 +47927,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 977608139}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1404262368}
   enemyCollider: {fileID: 0}
 --- !u!1 &977823746
 GameObject:
@@ -48971,12 +49041,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984400159}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 190.11, y: 41.6, z: -82.43}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -26.721863, y: 7.596504, z: -51.273804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &987327921
 GameObject:
@@ -50709,6 +50779,12 @@ Transform:
   m_Father: {fileID: 802637955}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1020235540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 8753331634480022901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1025398603
 Mesh:
   m_ObjectHideFlags: 0
@@ -65706,6 +65782,18 @@ Transform:
   m_Father: {fileID: 1658040648}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!1 &1404262368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 977608137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1413103823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782089836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1413410129
 GameObject:
   m_ObjectHideFlags: 0
@@ -66522,12 +66610,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434641604}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 150.948, y: 41.6, z: -190.13}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -65.883865, y: 7.596504, z: -158.97382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &1442958584
 Mesh:
@@ -71393,12 +71481,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494012942}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 138.02, y: 41.64, z: -28.72}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -78.81186, y: 7.636505, z: 2.4361973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1512641112
 GameObject:
@@ -71485,12 +71573,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512641112}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 39.4, y: 47.54, z: -28.72}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -177.43185, y: 13.536507, z: 2.4361973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &1515510033
 Mesh:
@@ -71670,7 +71758,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -71710,7 +71798,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -71782,7 +71870,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1518603403}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 686111381}
   enemyCollider: {fileID: 0}
 --- !u!43 &1521518536
 Mesh:
@@ -77406,6 +77494,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1537858448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1940838806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1544152370
 Mesh:
   m_ObjectHideFlags: 0
@@ -78576,7 +78670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &1571080326
 Mesh:
@@ -78741,6 +78835,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1575134251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 503625297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1576635061
 GameObject:
   m_ObjectHideFlags: 0
@@ -79393,7 +79493,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -79433,7 +79533,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -79505,7 +79605,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1584646886}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 2115141642}
   enemyCollider: {fileID: 0}
 --- !u!1 &1591786210
 GameObject:
@@ -90911,12 +91011,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695543143}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 65.446, y: 50.4, z: -28.72}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -151.38586, y: 16.396507, z: 2.4361973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1721894975
 GameObject:
@@ -91477,12 +91577,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736743718}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.09, y: 85.06, z: -82.48}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -201.74187, y: 51.056503, z: -51.323807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 18586069}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &1737876938
 Mesh:
@@ -93542,7 +93642,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -93582,7 +93682,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -93654,7 +93754,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1782089838}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1413103823}
   enemyCollider: {fileID: 0}
 --- !u!1 &1783539441
 GameObject:
@@ -98679,6 +98779,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1851570762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1924541452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1853513694
 Mesh:
   m_ObjectHideFlags: 0
@@ -100765,7 +100871,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -100805,7 +100911,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -100877,8 +100983,14 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1909838533}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1911342970}
   enemyCollider: {fileID: 0}
+--- !u!1 &1911342970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1909838531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1912673174
 GameObject:
   m_ObjectHideFlags: 0
@@ -101205,7 +101317,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -101245,7 +101357,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -101317,7 +101429,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1924541454}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1851570762}
   enemyCollider: {fileID: 0}
 --- !u!1 &1933107277
 GameObject:
@@ -102797,7 +102909,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -102837,7 +102949,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -102909,7 +103021,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 1940838808}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 1537858448}
   enemyCollider: {fileID: 0}
 --- !u!43 &1947673822
 Mesh:
@@ -108561,6 +108673,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+        type: 3}
+      propertyPath: m_Name
+      value: BulletSpawnPoint1
+      objectReference: {fileID: 0}
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_Name
@@ -108569,7 +108686,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169597877, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -108609,7 +108726,7 @@ PrefabInstance:
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8753331635169814225, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -108640,6 +108757,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753331636022932204, guid: 90cc72d5bd035e145a0923a84cedc920,
+        type: 3}
+      propertyPath: m_AutoBraking
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8753331636022932205, guid: 90cc72d5bd035e145a0923a84cedc920,
         type: 3}
@@ -108681,7 +108803,7 @@ MonoBehaviour:
   acceleration: 0.1
   animator1: {fileID: 2030852262}
   Bullet: {fileID: 1379772776942516758, guid: d00b2ae8e49993742ac4c2efa9288874, type: 3}
-  BulletSpawnPoint: {fileID: 0}
+  BulletSpawnPoint: {fileID: 215035201}
   enemyCollider: {fileID: 0}
 --- !u!43 &2033543071
 Mesh:
@@ -111610,6 +111732,12 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &2090298830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 169390408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2092898199
 Mesh:
   m_ObjectHideFlags: 0
@@ -113380,6 +113508,12 @@ Transform:
   m_Father: {fileID: 802637955}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115141642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8753331634649151346, guid: 90cc72d5bd035e145a0923a84cedc920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1584646884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125819805
 GameObject:
   m_ObjectHideFlags: 0
