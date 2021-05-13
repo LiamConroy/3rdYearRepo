@@ -2,8 +2,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
-//using UnityEngine.Collection;
-//using UnityEngine.Collection.Generic;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
@@ -108,7 +108,20 @@ public class Enemy : MonoBehaviour
             doorOpenScript.kills += 1;
             health = 1f;
             isDead = false;
-        }
+            Scene currentScene = SceneManager.GetActiveScene();  
+            string sceneName = currentScene.name;
+            if(sceneName == "TutorialLevel") {
+                StartCoroutine(win());
+            }
+        } 
+    }
+
+    IEnumerator win()
+    {
+        yield return new WaitForSeconds(2f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene("YouWinScene");
     }
 
     //Draws a sphere around the enemy model, for detecting if the player is within it

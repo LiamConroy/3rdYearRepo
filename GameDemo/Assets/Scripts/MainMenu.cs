@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void NextLevel (){
-        SceneManager.LoadScene("LevelTwo");
+        SceneManager.LoadScene("LevelOne");
         Debug.Log("scene switch");
     }
     
