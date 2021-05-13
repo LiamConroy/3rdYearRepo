@@ -16,5 +16,7 @@ to where you can download Github LFS. You will also need to follow the first ste
 
 ## Google Drive
 ```
-If, for whatever reason the project doesnt work a link for the build of the game can be found below.
+-If, for whatever reason the project doesnt work a link for the build of the game can be found below.
+
+-Link: 
 ```
