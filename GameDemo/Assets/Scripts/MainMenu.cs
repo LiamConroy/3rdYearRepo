@@ -20,8 +20,19 @@ public class MainMenu : MonoBehaviour
     }
 
     public void NextLevel (){
-        SceneManager.LoadScene("LevelOne");
-        Debug.Log("scene switch");
+            if(KillBox2.sceneName == "TutorialLevel"){
+                SceneManager.LoadScene("LevelOne");
+            }
+
+            if(KillBox2.sceneName == "LevelOne"){
+                SceneManager.LoadScene("LevelTwo");
+            }
+
+            if(KillBox2.sceneName == "LevelTwo"){
+                SceneManager.LoadScene("MainMenu");
+            }
+        // SceneManager.LoadScene("LevelOne");
+        // Debug.Log("scene switch");
     }
     
     public void Tutorial (){
