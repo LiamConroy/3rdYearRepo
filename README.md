@@ -12,6 +12,8 @@ to where you can download Github LFS. You will also need to follow the first ste
  https://git-lfs.github.com/
  
  Once this is set up you can clone the repository to your machine.
+ 
+ The EXE for the game can be found in the "GameDemoBuild" folder
 ```
 
 ## Google Drive
