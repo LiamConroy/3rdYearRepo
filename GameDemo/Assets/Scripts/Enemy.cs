@@ -51,9 +51,9 @@ public class Enemy : MonoBehaviour
    //Update is called once per frame
     void Update()
     {
-        print(target);
+        // print(target);
         //Follow player
-        print("Distance: "+distance);
+        // print("Distance: "+distance);
         distance = Vector3.Distance(target.position, transform.position);
         if(distance <= lookRadius)
         {

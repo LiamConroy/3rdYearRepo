@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
@@ -53,6 +54,12 @@ public class MainMenu : MonoBehaviour
     public void Back (){
         SceneManager.LoadScene("MainMenu");
         Debug.Log("Back to main menu");
+    }
+
+    public AudioMixer audioMixer;
+    public void SetVolume (float volume){
+        Debug.Log(volume);
+        audioMixer.SetFloat("volume", volume);
     }
 
 }

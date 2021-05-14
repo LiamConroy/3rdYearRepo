@@ -16,7 +16,15 @@ public class LevelSwitch : MonoBehaviour
             Debug.Log("Timer Off");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("LevelComplete");
+
+            if (KillBox2.sceneName == "LevelTwo"){
+                SceneManager.LoadScene("YouWinScene");
+            }
+
+            else {
+                SceneManager.LoadScene("LevelComplete");
+            }
+            
         }
 
     }

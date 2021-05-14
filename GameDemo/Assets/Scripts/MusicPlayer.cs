@@ -22,5 +22,10 @@ public class MusicPlayer : MonoBehaviour
     void Update() {
         
     }
+    
 
+    // public AudioMixer audioMixer;
+    // public void SetVolume (float volume){
+    //     audioMixer.SetFloat("volume", volume);
+    // }
 }
