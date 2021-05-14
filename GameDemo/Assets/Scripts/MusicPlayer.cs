@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-
     
-    // // Start is called before the first frame updateprivate AudioSource _audioSource;
-    // private AudioSource music;
-    //  private void Awake()
-    //  {
+    [SerializeField]
+    private AudioSource music;
+    public static MusicPlayer myMusicPlayer;
 
-    //      DontDestroyOnLoad(transform.gameObject);
-    //      music = GetComponent<AudioSource>();
-         
-    //  }
- 
-    //  void awake ()
-    //  {
-         
-    //      if(RestartButton.musicPlaying == false){
-    //        music.Play();
-    //        RestartButton.musicPlaying = true;
-    //       }
+    void Awake() {
+        if(myMusicPlayer == null) {
+            myMusicPlayer = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if(myMusicPlayer != this) {
+            Destroy(gameObject);
+        }
+    }
 
-       
-    //     //   else{
-    //     //    music.Stop();   
-    //     //   }
-    //  }
+    void Update() {
+        
+    }
+
 }

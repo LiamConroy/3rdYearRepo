@@ -12,6 +12,7 @@ public class GrapplingGun : MonoBehaviour
     public Transform gunTip, camera, player;
     private float maxDistance = 100f;
     private SpringJoint joint;
+    private bool canGrapple;
 
     //Sound
     AudioSource m_MyAudioSource;
@@ -23,30 +24,40 @@ public class GrapplingGun : MonoBehaviour
 
     void Start() {
         m_MyAudioSource = GetComponent<AudioSource>();
+        StartCoroutine(grappleWait());
+        canGrapple = false;
     }
 
     void Update()
     {
 
-    // if(Input.GetKeyDown(KeyCode.Escape)){
-    //     if (GameIsPaused){
-    //             GameIsPaused = false;
-    //         }
-    //         else{
-    //             GameIsPaused = true;
-    //         }
-    // }
+        // if(Input.GetKeyDown(KeyCode.Escape)){
+        //     if (GameIsPaused){
+        //             GameIsPaused = false;
+        //         }
+        //         else{
+        //             GameIsPaused = true;
+        //         }
+        // }
 
-    if(!PauseMenu.GameIsPaused){
-        if (Input.GetMouseButtonDown(1))
+        if(!PauseMenu.GameIsPaused && canGrapple == true)
         {
-            StartGrapple();
+            if (Input.GetMouseButtonDown(1))
+            {
+                StartGrapple();
+            }
+            else if (Input.GetMouseButtonUp(1))
+            {
+                StopGrapple();
+            }
         }
-        else if (Input.GetMouseButtonUp(1))
-        {
-            StopGrapple();
-        }
-     }
+
+    }
+
+    IEnumerator grappleWait()
+    {
+        yield return new WaitForSeconds(1f);
+        canGrapple = true;
     }
 
     void LateUpdate()

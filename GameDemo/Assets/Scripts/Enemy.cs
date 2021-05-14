@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -7,7 +6,7 @@ using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     public float health = 100f;
     public float lookRadius = 10f; 
     public int dmg = 10;
@@ -23,11 +22,13 @@ public class Enemy : MonoBehaviour
     public Animator animator1;
     
     public GameObject Bullet;
-    public GameObject BulletSpawnPoint;
+    public Transform BulletSpawnPoint;
     private Transform bulletSpawned;
     public CapsuleCollider enemyCollider;
 
     private float distance;
+
+    private Transform gunHolder;
 
     // Update is called once per frame
 
@@ -38,7 +39,9 @@ public class Enemy : MonoBehaviour
         target = PlayerManager.instance.player.transform;
         distance = 0f;
         agent = GetComponent<NavMeshAgent>();
-        BulletSpawnPoint = GameObject.Find("BulletSpawnPoint");
+        //BulletSpawnPoint = GameObject.Find("BulletSpawnPoint");
+        gunHolder = this.transform.GetChild(0);
+        BulletSpawnPoint = gunHolder.GetChild(0);
         enemyCollider = GetComponent<CapsuleCollider>();
         VelocityHash = Animator.StringToHash("Velocity");
         //doorReady = false;
@@ -89,6 +92,12 @@ public class Enemy : MonoBehaviour
             Die();
        }
 
+       if (!BulletSpawnPoint)
+       {
+            gunHolder = this.transform.GetChild(0);
+            BulletSpawnPoint = gunHolder.GetChild(0);
+       }
+
     }
 
     public void Shoot()
@@ -121,7 +130,7 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        SceneManager.LoadScene("YouWinScene");
+        SceneManager.LoadScene("LevelComplete");
     }
 
     //Draws a sphere around the enemy model, for detecting if the player is within it
