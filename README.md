@@ -20,5 +20,5 @@ to where you can download Github LFS. You will also need to follow the first ste
 ```
 -If, for whatever reason the project doesnt work a link for the build of the game can be found below.
 
--Link: 
+-Link: https://drive.google.com/file/d/1qUfjTIQI8ATaROW99zAmVssMdxeVgZkP/view?usp=sharing
 ```
